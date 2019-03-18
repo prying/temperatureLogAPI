@@ -2,8 +2,9 @@
 env/
 *.pyc
 __pycache__/
+app/static/*.png
 
-instance/
+instance/*
 data/
 
 .pytest_cache/

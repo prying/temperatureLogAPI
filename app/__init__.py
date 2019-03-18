@@ -1,3 +1,10 @@
+'''
+    File name: __init__.py
+    Author: Rohyl Joshi, Flynn Harrison
+    Date created: 18/03/2019
+    Python Tested Version: 3.7
+'''
+
 import os
 from flask import Flask, render_template
 from flask import request

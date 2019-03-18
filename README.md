@@ -9,7 +9,7 @@ to use most, if not all the of the functionality of the API you first need to ge
 key it returns you can now put it after and API function to use that keys data i.e:
 `/update?key=YOURKEY&temp=0` updates `YOURKEY`'s temp data with a value of 0.
 
-API calls are:
+API calls are: <br />
 `/getkey` to create a new key. <br />
 `/` gives users a plot of the temps. <br />
 `/update` with parameters of `temp`. <br />

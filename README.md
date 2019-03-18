@@ -10,11 +10,11 @@ key it returns you can now put it after and API function to use that keys data i
 `/update?key=YOURKEY&temp=0` updates `YOURKEY`'s temp data with a value of 0.
 
 API calls are:
-`/getkey` to create a new key.
-`/` gives users a plot of the temps.
-`/update` with parameters of `temp`.
-`/remove/log` to remove that keys log.
-`/remove/key` to remove that key.
+`/getkey` to create a new key. <br />
+`/` gives users a plot of the temps. <br />
+`/update` with parameters of `temp`. <br />
+`/remove/log` to remove that keys log. <br />
+`/remove/key` to remove that key. <br />
 
 place confidential configs in `/instance/config.py` and be sure its on the .gitignore or check its not in staging 
 

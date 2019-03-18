@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<title>IoT Club API</title>
+<style>
+	h1 {
+		color: blue;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+</style>
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='temp.css') }}" /> -->
+<body>
+	<h1>Latest temperature reading was {{ temp }}° ({{ mins }} mins {{ secs }} secs) ago</h1>
+	<img src="{{ url_for('static', filename='temp.png')}}" />
+</body>

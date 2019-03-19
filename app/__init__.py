@@ -122,7 +122,7 @@ def temp():
     # Check key
     key = check_key()
     if key is None:
-        return 'Invalid Key'
+        return render_template('homePage.html')
 
     # Open file
     # file check

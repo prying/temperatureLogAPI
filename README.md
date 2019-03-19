@@ -19,3 +19,6 @@ API calls are: <br />
 place confidential configs in `/instance/config.py` and be sure its on the .gitignore or check its not in staging 
 
 
+
+
+base code by Rohyl Joshi @ github.com/Trontor

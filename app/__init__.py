@@ -1,6 +1,6 @@
 '''
     File name: __init__.py
-    Author: Rohyl Joshi, Flynn Harrison
+    Author: Flynn Harrison
     Date created: 18/03/2019
     Python Tested Version: 3.7
 '''
@@ -23,12 +23,13 @@ try:
     app.config.from_pyfile('config.py')
 except IOError:
     pass
-# new comment 
+
 # Todo; impleament log line limit (remove old lines from temps.txt)
 # Todo; api update call speed limit
 
 # Folder check and create
 def folder_check_create(folder):
+    print('check dir '+folder)
     if os.path.isdir(folder):
         return True
     else:
@@ -64,6 +65,7 @@ def key_gen(size=6, chars=string.ascii_letters + string.digits):
 @app.before_first_request
 def startup():
     folder_check_create('data')
+    folder_check_create('app/static/')
 
 @app.route('/getkey')
 def get_key():

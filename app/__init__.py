@@ -27,6 +27,12 @@ except IOError:
 # Todo; impleament log line limit (remove old lines from temps.txt)
 # Todo; api update call speed limit
 
+# definitions
+__page_getkey__ = '/getkey'
+__page_update__ = '/update'
+__page_remove__ = '/remove'
+__page_home__   = '/'
+
 # Folder check and create
 def folder_check_create(folder):
     print('check dir '+folder)
@@ -67,7 +73,7 @@ def startup():
     folder_check_create('data')
     folder_check_create('app/static/')
 
-@app.route('/getkey')
+@app.route(__page_getkey__)
 def get_key():
     # Maybe better way to give the user a key.
     # also this could be abused, this needs to be addressed 
@@ -122,7 +128,8 @@ def temp():
     # Check key
     key = check_key()
     if key is None:
-        return render_template('homePage.html')
+        return render_template('homePage.html', home = __page_home__, getkey = __page_getkey__,
+                                                update = __page_update__, remove = __page_remove__)
 
     # Open file
     # file check

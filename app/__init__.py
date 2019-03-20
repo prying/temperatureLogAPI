@@ -84,7 +84,7 @@ def get_key():
             os.mkdir("data/"+key)
             return key
 
-@app.route('/update')
+@app.route(__page_update__)
 def home():
     # Check key
     key = check_key()
@@ -102,7 +102,7 @@ def home():
         f.write(("%s, %s\n") % (time, temp))
     return 'Succesfully tracked'
 
-@app.route('/remove/<name>')
+@app.route(__page_remove__+'/<name>')
 def remove(name):
     # Check key
     key = check_key()
@@ -123,7 +123,7 @@ def remove(name):
     # name was not valid
     return 'Not valid remove'
 
-@app.route('/log')
+@app.route(__page_home__)
 def temp():
     # Check key
     key = check_key()

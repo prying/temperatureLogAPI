@@ -123,7 +123,7 @@ def remove(name):
     # name was not valid
     return 'Not valid remove'
 
-@app.route('/')
+@app.route('/log')
 def temp():
     # Check key
     key = check_key()

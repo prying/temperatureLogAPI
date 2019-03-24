@@ -1,5 +1,6 @@
 # Temperature Log API
 this project uses Flask to create and api to lot the temperature.
+Currently the master branch is set up for Azure web app hosting
 
 ## Run
 to run this flask app set `FLASK_APP` to app i.e `set FLASK_APP=app`, then to run `flask run`

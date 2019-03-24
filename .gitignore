@@ -2,7 +2,7 @@
 env/
 *.pyc
 __pycache__/
-app/static/*.png
+api_app/static/*.png
 
 instance/*
 data/

@@ -1,1 +1,1 @@
-DEBUG = True # Turns on debugging features in Flask
+DEBUG = False # Turns on debugging features in Flask

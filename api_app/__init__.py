@@ -150,7 +150,7 @@ def temp():
     y = [float(line.split(',')[1]) for line in lines]
 
     # Remove any old graph
-    for file in os.scandir('app/static/'):
+    for file in os.scandir('api_app/static/'):
         if file.name.endswith(".png"):
             os.remove(file.path)
 

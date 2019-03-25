@@ -71,7 +71,7 @@ def key_gen(size=6, chars=string.ascii_letters + string.digits):
 @app.before_first_request
 def startup():
     folder_check_create('data')
-    folder_check_create('app/static/')
+    folder_check_create('api_app/static/')
 
 @app.route(__page_getkey__)
 def get_key():
@@ -162,6 +162,6 @@ def temp():
     plt.ylabel('Temperature')
     plt.title("Temperature Vs Time")
     plt.plot(x, y, 'rH:')
-    plt.savefig('app/static/'+plot_name+'.png')
+    plt.savefig('api_app/static/'+plot_name+'.png')
     return render_template('temp.html', mins=mins, secs=secs, temp=temp, plot_name = plot_name)
 
